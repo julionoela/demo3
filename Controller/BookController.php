@@ -25,7 +25,7 @@ class BookController extends Controller
 
         $entities = $em->getRepository('CustomBookBundle:Book')->findAll();
 
-        return $this->render('CustomBookBundle:Book:index.html.twig', array(
+        return $this->render('CustomBookBundle:Book:add.html.twig', array(
             'entities' => $entities,
         ));
     }
